@@ -42,7 +42,8 @@
 
 ## EXPOSURE = 2 LEVELS & OUTCOME = 2 LEVELS ----
 
-# make sure your exposure and outcome are coded as 1 for yes and 2 for no for exposures or outcomes with mutliple levels see next section
+# make sure your exposure and outcome are coded as 1 for yes and 2
+# for no for exposures or outcomes with mutliple levels see next section
 
 # first we create an array with 2+ k dimensions with the xtabs() function
 strat <- xtabs(~exposure + outcome + adjvar1 + adjvar2 + ... + adjvarK, data = data)
