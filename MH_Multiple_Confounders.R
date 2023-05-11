@@ -147,6 +147,9 @@ array_n <- array(strat_n,
                       outcomes = c('outcome yes', 'outcome no'),
                       confounders = 1:n))
 
+epi.2by2(array_y, method = 'cross.sectional')
+epi.2by2(array_n, method = 'cross.sectional')
+
 ## EXPOSURE OR OUTCOME = 2+ LEVELS ----
 
 # if your exposure or outcome has more than 2 levels, you can use the bins again
@@ -180,10 +183,10 @@ array_n_2 <- array(strat_n_2,
                         outcomes = c('outcome yes', 'outcome no'),
                         confounders = 1:n))
 
-epi.2by2(array_y_1)
-epi.2by2(array_n_1)
-epi.2by2(array_y_2)
-epi.2by2(array_n_2)
+epi.2by2(array_y_1, method = 'cross.sectional')
+epi.2by2(array_n_1, method = 'cross.sectional')
+epi.2by2(array_y_2, method = 'cross.sectional')
+epi.2by2(array_n_2, method = 'cross.sectional')
 
 
 # I hope this helps! :)
