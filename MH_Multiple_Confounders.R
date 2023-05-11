@@ -129,7 +129,7 @@ epi.2by2(array_2, method = 'cross.sectional')
 
 # EFFECT MODIFIER ----
 
-## EXPOSURE OR OUTCOME = 2+ LEVELS ----
+## EXPOSURE = 2 LEVELS & OUTCOME = 2 LEVELS ----
 # to stratify by another variable, everything stays the same except when we use xtabs() we will subset the data
 
 strat_y <- xtabs(~exposure + outcome + adjvar1 + adjvar2 + ... + adjvarK, data = data, subset = stratvar == 'yes')
